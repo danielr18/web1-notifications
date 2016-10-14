@@ -1,0 +1,33 @@
+.content {
+    background-color: $background;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.addReminder {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    background-color: #ffffff;
+    box-shadow: 18px 4px 52px -21px rgba(0,0,0,0.25);
+    z-index: 101;
+}
+
+.reminders {
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pendingReminders {
+    overflow-y: auto;
+    flex: 0 1 100%;
+    overflow-x: hidden;
+}
+
+.shownReminders {
+    overflow-y: auto;
+    flex: 0 1 100%;
+    overflow-x: hidden;
+}

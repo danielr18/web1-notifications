@@ -1,0 +1,27 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.timeInput {
+  max-width: 80px;
+}
+
+.actionButtons {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 10px;
+
+    [data-react-toolbox="font-icon"] {
+      position: initial;
+      width: initial;
+      line-height: 3.5rem !important;
+      color: white;
+    }
+  }
+}
