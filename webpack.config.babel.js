@@ -1,6 +1,6 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import {HotModuleReplacementPlugin} from 'webpack';
+import {HotModuleReplacementPlugin, LoaderOptionsPlugin} from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const defaultEnv = {
@@ -13,6 +13,7 @@ export default (env = defaultEnv) => ({
     ...env.dev ? [
       'react-hot-loader/patch',
       'webpack-dev-server/client?http://localhost:8080',
+      'webpack/hot/only-dev-server',
     ] : [],
     path.join(__dirname, 'src/index.jsx'),
   ],

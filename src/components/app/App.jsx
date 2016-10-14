@@ -12,7 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        Hola
+        <div className="box box-1">
+          5
+        </div>
+        <div className="box box-2">
+          6s
+        </div>
       </div>
     );
   }
